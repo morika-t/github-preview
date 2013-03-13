@@ -1,5 +1,15 @@
 # Github Preview [![TravisCI](https://secure.travis-ci.org/kei-s/github-preview.png?branch=master)](http://travis-ci.org/kei-s/github-preview) [![Dependency Status](https://gemnasium.com/kei-s/github-preview.png)](https://gemnasium.com/kei-s/github-preview)
 
+## App on CloudFoundry
+[http://github-preview.cloudfoundry.com/](http://github-preview.cloudfoundry.com/)
+
+## How to Deploy Cloudfoundry
+
+    git clone git@github.com:morika-t/github-preview.git
+    bundle install --path vendor/bundle
+    vmc push deploy-app-name
+
+
 ## App on Heroku
 [http://github-preview.herokuapp.com/](http://github-preview.herokuapp.com/)
 
