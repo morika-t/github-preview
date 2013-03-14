@@ -5,6 +5,8 @@
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.6.2.min.js"}
     %script{:type => "text/javascript", :src => "http://documentcloud.github.com/underscore/underscore-min.js"}
     %script{:type => "text/javascript", :src => "/scripts/app.js"}
+    %script{:type => "text/javascript", :src => "/scripts/jquery.selection.js"}
+    %script{:type => "text/javascript", :src => "/scripts/wiki-button.js"}
     %link{:href => "/stylesheets/github.css", :rel => "stylesheet", :type => "text/css" }
   %body
     %a{:href => "https://github.com/kei-s/github-preview"}
@@ -32,7 +34,9 @@
           %param{:NAME=> "FlashVars", :value=> "call=getText"}
           %param{:name=> "bgcolor", :value=> "#FFF"}
           %embed{:src=> "/flash/clippy.swf", :width=> "110", :height=> "14", :name=> "clippy", :quality=> "high", :allowScriptAccess=> "always", :type=> "application/x-shockwave-flash", :pluginspage=> "http://www.macromedia.com/go/getflashplayer", :FlashVars=> "call=getText", :bgcolor=> "#FFF" }
-
+      
+          %input{:type => "button", :id => "pre-button", :value => "pre"}
+   
     %table{:cellspacing => "0", :cellpadding => "0", :style => "margin: 0; padding: 6px 6px 0; width: 100%;"}
       %tr
         %td{:style => "vertical-align: top; width: 50%;"}
